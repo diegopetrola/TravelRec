@@ -1,0 +1,152 @@
+/* Disclosure: CSS was done with help of IA */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #EEE;
+  background-image: url('./background_lake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+nav img {
+  margin-right: 20px;
+}
+
+.nav-item {
+  color: #444;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  margin-left: auto; /* Pushes the search bar to the right */
+}
+
+#search-input {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+  border-color: #007bff;
+}
+
+#search-button {
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-left: solid; /* Prevents double border with input */
+  border-right-color: #000;
+}
+
+#clear-button {
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-left: none; /* Prevents double border with input */
+}
+#clear-button:hover {
+  background-color: #0056b3;
+}
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  padding: 0 10px;
+  margin-top: 15%;
+  justify-content: space-evenly;
+}
+
+#search-res{
+  background-color: #313f53a8;
+  margin: -10% 20px 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #313f53a8;
+  max-width: 45%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-bottom: 2%;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+}

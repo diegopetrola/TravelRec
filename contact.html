@@ -3,14 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Travel Recommendations</title>
   </head>
   <body>
     <nav>
-      <a href="/index.html">Home</a>
-      <a href="/about.html">About Us</a>
-      <a>Contact</a>
-      <span>Search Button</span>
+      <img src="./assets/plane.svg" width="50px" />
+      <a class="nav-item" href="./index.html">Home</a>
+      <a class="nav-item" href="./about.html">About Us</a>
+      <a class="nav-item">Contact</a>
+      <span class="search-bar">
+        <input type="text" name="search-input" id="search-input" />
+        <button>Search</button>
+      </span>
     </nav>
+    <div>
+      <h1>Contact</h1>
+      <p>We'd love to hear from you.</p>
+
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="name" />
+        <label for="email">Email</label>
+        <input type="text" name="email" class="email" />
+        <label for="message">Message</label>
+        <textarea name="message" class="message" rows="5" cols="40"></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
   </body>
 </html>

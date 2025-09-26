@@ -3,14 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Travel Recommendations</title>
   </head>
   <body>
     <nav>
-      <a>Home</a>
-      <a href="/about.html">About Us</a>
-      <a href="/contact.html">Contact</a>
-      <span>Search Button</span>
+      <img src="./assets/plane.svg" width="50px" />
+      <a class="nav-item">Home</a>
+      <a class="nav-item" href="./about.html">About Us</a>
+      <a class="nav-item" href="./contact.html">Contact</a>
+      <span class="search-bar">
+        <input type="text" name="search-input" id="search-input" />
+        <button id="search-button" onclick="searchClick()">Search</button>
+        <button id="clear-button" onclick="clearOnClick()">Clear</button>
+      </span>
     </nav>
+
+    <div class="content-wrapper">
+      <main>
+        <h1>Welcome to TravelRec</h1>
+        <p>
+          We provide travel recommendations from the most popular to the most
+          exotic places on Earth. Check our recommendations today!
+        </p>
+      </main>
+      <main id="search-res">
+        <div>
+          <h1>Tokyo, Japan</h1>
+          <img src="assets/tokyo.jpg" width="400px" />
+          <p>
+            A bustling metropolis blending tradition and modernity, famous for
+            its cherry blossoms and rich culture.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
