@@ -100,6 +100,7 @@ nav img {
 }
 
 #search-res{
+  display: none;
   background-color: #313f53a8;
   margin: -10% 20px 20px 0;
   padding: 20px;

@@ -12,14 +12,21 @@ async function searchClick() {
     const response = await fetch("./data.json");
     const data = await response.json();
 
-    let results = data.temples.concat(data.beaches);
-    for (c of data.countries) {
-      results = results.concat(c.cities);
+    let results = [];
+
+    for (c of ["beaches", "temples"]) {
+      if (c.includes(search)) {
+        results = results.concat(data[c]);
+      }
     }
-    results = results.filter((v) => v.name.toLowerCase().includes(search));
-    console.log(results);
+    if ("countries".includes(search)) {
+      data.countries.forEach(
+        (country) => (results = results.concat(country.cities))
+      );
+    }
+
     if (results.length > 0) {
-      searchEl.style.display = "block"; // Show the container
+      searchEl.style.display = "block";
       results.forEach((destination) => {
         const div = document.createElement("div");
         div.innerHTML = `
