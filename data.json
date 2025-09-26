@@ -11,7 +11,7 @@
         },
         {
           "name": "Melbourne, Australia",
-          "imageUrl": "enter_your_image_for_melbourne.jpg",
+          "imageUrl": "./assets/melbourne.jpg",
           "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
         }
       ]
@@ -27,7 +27,7 @@
         },
         {
           "name": "Kyoto, Japan",
-          "imageUrl": "enter_your_image_for_kyoto.jpg",
+          "imageUrl": "./assets/kyoto.jpg",
           "description": "Known for its historic temples, gardens, and traditional tea houses."
         }
       ]
